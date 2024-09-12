@@ -8,6 +8,7 @@ resource "aws_instance" "webserver" {
   subnet_id                   = aws_subnet.subnet.id
   user_data                   = "${file("create_apache.sh")}"
 
+
   tags = {
     Name = "webserver"
   }
