@@ -1,6 +1,10 @@
 name: Terraform Apply
 
-on: [push]
+on:
+    push:
+        paths:
+            - /**
+        branches: ["release/sin-backend"]
 
 jobs:
   terraform_apply:
