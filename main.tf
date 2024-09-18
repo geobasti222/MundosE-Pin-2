@@ -10,6 +10,6 @@ resource "aws_instance" "webserver" {
 
 
   tags = {
-    Name = "webserver_grupo8"
+    Name = "webserver_8"
   }
 }
